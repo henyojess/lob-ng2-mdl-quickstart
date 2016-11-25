@@ -7,11 +7,13 @@ import { MdlModule } from 'angular2-mdl';
 import { AppComponent } from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
+import { MainScreenComponent } from './main-screen/main-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    MainScreenComponent
   ],
   imports: [
     BrowserModule,
