@@ -6,21 +6,25 @@ import { MdlModule } from 'angular2-mdl';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
+import { MainScreenRoutingModule }     from './main-screen/main-screen-routing.module';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
+import { DashboardScreenComponent } from './dashboard-screen/dashboard-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
-    MainScreenComponent
+    MainScreenComponent,
+    DashboardScreenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MdlModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MainScreenRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

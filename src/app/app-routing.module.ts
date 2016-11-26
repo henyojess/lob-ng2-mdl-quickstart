@@ -7,7 +7,6 @@ import { MainScreenComponent } from './main-screen/main-screen.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login',  component: LoginScreenComponent },
-  { path: 'main',  component: MainScreenComponent },
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
