@@ -1,3 +1,38 @@
-<p>
-  main-screen works!
-</p>
+<div>
+  <mdl-layout #mdlLayout="mdlLayout">
+    <mdl-layout-header>
+      <mdl-layout-header-row style="justify-content: space-between;">
+        <mdl-layout-title>LOB NG2-MDL QUICKSTART</mdl-layout-title>
+        <button mdl-button #btn1="mdlButton" (click)="m1.toggle($event, btn1)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-drawer style="text-align:left">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link">
+          <mdl-icon>dashboard</mdl-icon>
+          <span>Dashboard</span>
+        </a>
+        <a class="mdl-navigation__link">
+          <mdl-icon>settings</mdl-icon>
+          <span>Settings</span>
+        </a>
+        <a class="mdl-navigation__link">
+          <mdl-icon>exit_to_app</mdl-icon>
+          <span>Sign out</span>
+        </a>
+      </nav>
+    </mdl-layout-drawer>
+    <mdl-layout-content>
+    </mdl-layout-content>
+  </mdl-layout>
+  <mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-right">
+    <mdl-menu-item>
+      <mdl-icon class="menu-item-icon">settings</mdl-icon>
+      <span>Settings</span>
+    </mdl-menu-item>
+    <mdl-menu-item>      
+      <mdl-icon class="menu-item-icon">exit_to_app</mdl-icon>
+      <span>Sign out</span>      
+    </mdl-menu-item>    
+  </mdl-menu>
+</div>
