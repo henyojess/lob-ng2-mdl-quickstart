@@ -12,7 +12,7 @@
           <mdl-icon>dashboard</mdl-icon>
           <span>Dashboard</span>
         </a>
-        <a class="mdl-navigation__link">
+        <a class="mdl-navigation__link" (click)="showSettingsScreen()">
           <mdl-icon>settings</mdl-icon>
           <span>Settings</span>
         </a>
@@ -27,7 +27,7 @@
     </mdl-layout-content>
   </mdl-layout>
   <mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-right">
-    <mdl-menu-item>
+    <mdl-menu-item (click)="showSettingsScreen()">
       <mdl-icon class="menu-item-icon">settings</mdl-icon>
       <span>Settings</span>
     </mdl-menu-item>

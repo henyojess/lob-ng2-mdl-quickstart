@@ -19,4 +19,8 @@ export class MainScreenComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  showSettingsScreen() {
+    this.router.navigate(['/main/settings']);
+  }
+
 }
