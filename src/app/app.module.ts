@@ -10,13 +10,15 @@ import { MainScreenRoutingModule }     from './main-screen/main-screen-routing.m
 import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { DashboardScreenComponent } from './dashboard-screen/dashboard-screen.component';
+import { SettingsScreenComponent } from './settings-screen/settings-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
     MainScreenComponent,
-    DashboardScreenComponent
+    DashboardScreenComponent,
+    SettingsScreenComponent
   ],
   imports: [
     BrowserModule,
