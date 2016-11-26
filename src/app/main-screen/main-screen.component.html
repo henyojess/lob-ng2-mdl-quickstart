@@ -16,7 +16,7 @@
           <mdl-icon>settings</mdl-icon>
           <span>Settings</span>
         </a>
-        <a class="mdl-navigation__link">
+        <a class="mdl-navigation__link" (click)="signout()">
           <mdl-icon>exit_to_app</mdl-icon>
           <span>Sign out</span>
         </a>
@@ -30,7 +30,7 @@
       <mdl-icon class="menu-item-icon">settings</mdl-icon>
       <span>Settings</span>
     </mdl-menu-item>
-    <mdl-menu-item>      
+    <mdl-menu-item (click)="signout()">      
       <mdl-icon class="menu-item-icon">exit_to_app</mdl-icon>
       <span>Sign out</span>      
     </mdl-menu-item>    
